@@ -10,3 +10,20 @@ The MML compiler components are:
 * type checker (`targets/type_checker.cpp`)
 * XML writer (for the middle delivery: `targets/xml_writer.cpp`)
 * Postfix writer (for the final delivery: `targets/postfix_writer.cpp`)
+
+Use example:
+```
+forward int<string> g;
+auto f = (string s) -> int {
+  g(s);
+  return 10;
+};
+public g = (string n) -> int {
+  n!!
+  return 14;
+};
+begin
+  f("ola")!!
+  return 0;
+end
+```
